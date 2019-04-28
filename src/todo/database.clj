@@ -7,7 +7,7 @@
         :subprotocol "mysql"
         :user "root"
         :password "root"
-        :subname "//localhost:3306/todo"}))
+        :subname "//localhost:3306/menagerie"}))
 
 ; set up korma
 (korma/defdb db db-connection-info)

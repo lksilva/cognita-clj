@@ -4,8 +4,8 @@
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [compojure "1.6.1"]
-                 [ring/ring-core "1.3.2"]
-                 [ring/ring-json "0.3.1"]
+                 [ring/ring-core "1.7.1"]
+                 [ring/ring-json "0.4.0"]
                  [korma "0.3.0-RC5"]
                  [mysql/mysql-connector-java "5.1.6"]
                  [ring/ring-defaults "0.3.2"]]
