@@ -4,6 +4,7 @@
      [compojure.route :as route]
      [ring.middleware.json :as json]
      [ring.util.response :refer [response]]
+     [todo.query_appointments :refer :all]
      [todo.query :refer :all]))
 
 (defroutes app-routes
@@ -18,6 +19,8 @@
        (response (update-todo (Integer/parseInt id) title is_complete)))
   (DELETE "/api/todos/:id" [id]
         (response (delete-todo (Integer/parseInt id))))
+  (GET "/api/appointments" []
+        (response (get-appointments)))
   (route/resources "/")
   (route/not-found "Not Found"))
 
